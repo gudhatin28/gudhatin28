@@ -1,0 +1,155 @@
+/* Vibrant portfolio polish: bright accents, subtle glow, and restrained sparkle effects */
+:root{
+  --violet:#8b5cf6;
+  --pink:#ec4899;
+  --cyan:#22d3ee;
+  --lime:#86efac;
+  --spark:#fde68a;
+}
+
+body{
+  background:
+    radial-gradient(circle at 12% 8%,rgba(34,211,238,.14),transparent 25%),
+    radial-gradient(circle at 88% 14%,rgba(139,92,246,.13),transparent 24%),
+    radial-gradient(circle at 72% 78%,rgba(236,72,153,.08),transparent 26%),
+    linear-gradient(180deg,#07111f 0%,#0b1628 50%,#07111f 100%);
+  background-attachment:fixed;
+}
+
+body::before,
+body::after{
+  content:"✦";
+  position:fixed;
+  z-index:-1;
+  color:rgba(253,230,138,.55);
+  text-shadow:0 0 18px rgba(253,230,138,.42);
+  animation:pageTwinkle 3.6s ease-in-out infinite;
+  pointer-events:none;
+}
+body::before{left:6vw;top:19vh;font-size:18px}
+body::after{right:7vw;top:28vh;font-size:13px;animation-delay:1.3s}
+
+.site-header{
+  border-bottom:1px solid rgba(139,92,246,.18);
+  box-shadow:0 8px 30px rgba(4,12,24,.22);
+}
+
+.brand{
+  background:linear-gradient(135deg,var(--cyan),var(--violet),var(--pink));
+  background-size:180% 180%;
+  animation:brandGlow 7s ease infinite;
+  box-shadow:0 0 24px rgba(34,211,238,.22),0 10px 28px rgba(139,92,246,.16);
+}
+
+.nav a{transition:color .2s ease,text-shadow .2s ease}
+.nav a:hover,.nav a.active{color:#fff;text-shadow:0 0 16px rgba(34,211,238,.28)}
+.nav a.active:after{background:linear-gradient(90deg,var(--cyan),var(--violet),var(--pink));box-shadow:0 0 12px rgba(139,92,246,.45)}
+
+.hero h1 span,.projects-hero h1 span{
+  background:linear-gradient(90deg,#5eead4,#67e8f9,#a78bfa,#f9a8d4);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  filter:drop-shadow(0 0 18px rgba(34,211,238,.08));
+}
+
+.eyebrow{color:#b9f3ec}
+
+.hero-panel,.education-card,.contact-card,.project-card,.preview-card,.skill-card,.case-visual,.abstract-visual,.risk-visual,.research-visual{
+  position:relative;
+  isolation:isolate;
+}
+
+.hero-panel::after,.education-card::after,.contact-card::after,.project-card::before,.preview-card::before,.skill-card::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:inherit;
+  padding:1px;
+  background:linear-gradient(135deg,rgba(34,211,238,.32),rgba(139,92,246,.14),rgba(236,72,153,.20));
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
+  z-index:-1;
+}
+
+.metric-card{
+  transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;
+}
+.metric-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(34,211,238,.28);
+  box-shadow:0 14px 34px rgba(34,211,238,.08);
+}
+.metric-card strong{background:linear-gradient(90deg,#fff,#b9fff5);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+.btn-primary{
+  background:linear-gradient(100deg,#4fd1c5,#22d3ee,#8b5cf6);
+  background-size:180% 180%;
+  color:#031218;
+  box-shadow:0 10px 26px rgba(34,211,238,.18);
+  animation:buttonShift 8s ease infinite;
+}
+.btn-primary:hover{box-shadow:0 14px 34px rgba(139,92,246,.25)}
+.btn-secondary:hover,.nav-cta:hover{border-color:rgba(167,139,250,.5);box-shadow:0 0 22px rgba(139,92,246,.12)}
+
+.skill-icon{
+  background:linear-gradient(145deg,rgba(34,211,238,.16),rgba(139,92,246,.14));
+  box-shadow:inset 0 0 18px rgba(255,255,255,.02),0 0 18px rgba(34,211,238,.06);
+}
+
+.stack-line span,.tag-row span,.skill-cloud span{
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.stack-line span:hover,.tag-row span:hover,.skill-cloud span:hover{
+  transform:translateY(-2px);
+  border-color:rgba(167,139,250,.36);
+  background:linear-gradient(90deg,rgba(34,211,238,.07),rgba(139,92,246,.08));
+}
+
+.page-hero h1,.section-heading h2,.case-copy h2{
+  text-shadow:0 0 28px rgba(34,211,238,.035);
+}
+
+.turtle-assistant{
+  filter:drop-shadow(0 0 10px rgba(34,211,238,.22)) drop-shadow(0 14px 24px rgba(0,0,0,.28));
+}
+.turtle-assistant::before{
+  content:"✦";
+  position:absolute;
+  left:-7px;
+  top:16px;
+  color:#f9a8d4;
+  font-size:12px;
+  text-shadow:0 0 12px rgba(236,72,153,.55);
+  animation:sparkleOrbit 2.7s ease-in-out infinite;
+}
+.turtle-sparkle{color:var(--spark)!important;text-shadow:0 0 14px rgba(253,230,138,.65)!important}
+
+.assistant-panel{
+  border-color:rgba(139,92,246,.22);
+  box-shadow:0 28px 80px rgba(0,0,0,.5),0 0 34px rgba(34,211,238,.08);
+}
+.assistant-head{background:linear-gradient(90deg,rgba(34,211,238,.05),rgba(139,92,246,.06),rgba(236,72,153,.04))}
+
+@keyframes pageTwinkle{
+  0%,100%{opacity:.2;transform:scale(.72) rotate(0deg)}
+  50%{opacity:.95;transform:scale(1.18) rotate(20deg)}
+}
+@keyframes brandGlow{
+  0%,100%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+@keyframes buttonShift{
+  0%,100%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+@keyframes sparkleOrbit{
+  0%,100%{opacity:.35;transform:translate(0,0) scale(.8) rotate(0)}
+  50%{opacity:1;transform:translate(-3px,-7px) scale(1.2) rotate(25deg)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  body::before,body::after,.brand,.btn-primary,.turtle-assistant::before{animation:none}
+}
