@@ -98,34 +98,19 @@ My strongest projects are below. Each one shows a different part of how I work w
 
 ---
 
+<div align="center">
+
 ## What I work with
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
 ### Analysis & Reporting
-- SQL querying and validation
-- Python / pandas analysis
-- Excel analysis and reporting
-- Power BI dashboards
-- KPI and trend analysis
 
-</td>
-<td width="50%" valign="top">
+`SQL querying & validation` · `Python / pandas` · `Excel` · `Power BI` · `KPI & trend analysis`
 
 ### Data Quality & Business Context
-- Data cleaning and reconciliation
-- Root-cause investigation
-- Data integration concepts
-- Data governance
-- Risk and scenario analysis
 
-</td>
-</tr>
-</table>
+`Data cleaning & reconciliation` · `Root-cause investigation` · `Data integration` · `Data governance` · `Risk & scenario analysis`
 
-<div align="center">
+<br/>
 
 <img src="https://img.shields.io/badge/SQL-Querying%20%26%20Validation-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
 <img src="https://img.shields.io/badge/Power%20BI-Dashboards-F2C811?style=for-the-badge&logo=powerbi&logoColor=000" />
