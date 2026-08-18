@@ -1,0 +1,114 @@
+.turtle-assistant{
+  position:fixed;
+  right:24px;
+  bottom:22px;
+  z-index:35;
+  width:104px;
+  height:92px;
+  border:0;
+  background:transparent;
+  padding:0;
+  cursor:pointer;
+  filter:drop-shadow(0 14px 24px rgba(0,0,0,.28));
+  animation:turtleFloat 3.2s ease-in-out infinite;
+}
+
+.turtle-assistant img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  border-radius:24px;
+  transition:transform .22s ease,filter .22s ease;
+}
+
+.turtle-assistant:hover img{
+  transform:scale(1.08) rotate(-2deg);
+  filter:brightness(1.05) saturate(1.08);
+}
+
+.turtle-tip{
+  position:absolute;
+  right:76px;
+  bottom:54px;
+  white-space:nowrap;
+  background:rgba(12,29,46,.96);
+  color:#ecfffb;
+  border:1px solid rgba(66,215,197,.24);
+  border-radius:999px;
+  padding:8px 12px;
+  font-size:.78rem;
+  font-weight:800;
+  opacity:0;
+  transform:translateX(8px);
+  pointer-events:none;
+  transition:opacity .2s ease,transform .2s ease;
+  box-shadow:0 10px 28px rgba(0,0,0,.22);
+}
+
+.turtle-assistant:hover .turtle-tip,
+.turtle-assistant:focus-visible .turtle-tip{
+  opacity:1;
+  transform:translateX(0);
+}
+
+.turtle-sparkle{
+  position:absolute;
+  top:-2px;
+  right:5px;
+  color:#f6cf77;
+  font-size:1.05rem;
+  animation:sparkleTwinkle 1.8s ease-in-out infinite;
+  text-shadow:0 0 12px rgba(246,207,119,.45);
+}
+
+.turtle-assistant:after{
+  content:"";
+  position:absolute;
+  left:17px;
+  right:17px;
+  bottom:-5px;
+  height:10px;
+  border-radius:50%;
+  background:rgba(66,215,197,.16);
+  filter:blur(5px);
+  animation:turtleShadow 3.2s ease-in-out infinite;
+}
+
+.assistant-panel .assistant-head h2:after{
+  content:"  · Portfolio Assistant";
+  color:#9db2b5;
+  font-size:.72rem;
+  font-weight:600;
+}
+
+@keyframes turtleFloat{
+  0%,100%{transform:translateY(0) rotate(0deg)}
+  50%{transform:translateY(-8px) rotate(1deg)}
+}
+
+@keyframes turtleShadow{
+  0%,100%{transform:scaleX(1);opacity:.7}
+  50%{transform:scaleX(.78);opacity:.4}
+}
+
+@keyframes sparkleTwinkle{
+  0%,100%{transform:scale(.8) rotate(0deg);opacity:.45}
+  50%{transform:scale(1.2) rotate(18deg);opacity:1}
+}
+
+@media (max-width:620px){
+  .turtle-assistant{
+    width:82px;
+    height:72px;
+    right:12px;
+    bottom:12px;
+  }
+  .turtle-tip{display:none}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .turtle-assistant,
+  .turtle-assistant:after,
+  .turtle-sparkle{animation:none}
+}
