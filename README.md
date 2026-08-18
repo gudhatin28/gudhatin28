@@ -1,122 +1,171 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Nandini%20Reddy&fontAlign=50&fontAlignY=38&desc=BI%20Analyst%20%7C%20Data%20Analyst&descAlignY=60&animation=fadeIn" width="100%" />
-
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1100&center=true&vCenter=true&width=700&lines=SQL+%7C+Power+BI+%7C+Python+%7C+Excel;Turning+messy+data+into+decision-ready+insights;Business+Intelligence+%7C+Data+Quality+%7C+Risk+Analytics" alt="Typing SVG" />
-</a>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=180&text=NANDINI%20REDDY&fontAlign=50&fontAlignY=38&desc=Business%20Intelligence%20%7C%20Data%20Analytics%20%7C%20Decision%20Support&descAlignY=62&animation=fadeIn" width="100%" />
 
 <p>
-  <a href="https://www.linkedin.com/in/gnandinireddy"><img src="https://img.shields.io/badge/LinkedIn-Nandini%20Reddy-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <img src="https://img.shields.io/badge/VCU-M.S.%20Information%20Systems-555555?style=for-the-badge" />
+  <a href="https://www.linkedin.com/in/gnandinireddy"><img src="https://img.shields.io/badge/LinkedIn-Professional%20Profile-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  <img src="https://img.shields.io/badge/VCU-M.S.%20Information%20Systems-4B5563?style=flat-square" />
+  <img src="https://img.shields.io/badge/Focus-BI%20%7C%20Data%20Analysis%20%7C%20Reporting-111827?style=flat-square" />
 </p>
+
+### I investigate what is driving the numbers — then turn the evidence into decisions.
+
+`SQL` · `Power BI` · `Python` · `Excel` · `Data Quality` · `Reporting` · `Risk Analytics`
 
 </div>
 
-## 👋 About Me
+---
 
-I'm a **BI/Data Analyst** with an M.S. in Information Systems from **Virginia Commonwealth University, School of Business**. I focus on one thing: understanding **why the numbers look the way they do**.
+## Executive Portfolio Snapshot
 
-I work across **SQL, Power BI, Python, and Excel** to clean and validate data, investigate inconsistencies, build dashboards, and translate findings into decisions non-technical stakeholders can use.
+<table>
+<tr>
+<td width="25%" align="center"><b>3,755</b><br/>real-world salary records analyzed</td>
+<td width="25%" align="center"><b>10</b><br/>cross-system data issues documented</td>
+<td width="25%" align="center"><b>~22.5K</b><br/>mortgage records analyzed</td>
+<td width="25%" align="center"><b>4</b><br/>risk models evaluated</td>
+</tr>
+</table>
 
-> **Portfolio focus:** Business Intelligence · Data Analysis · Data Quality · Reporting · Risk Analytics · Data Visualization
+I am a BI/Data Analyst with an **M.S. in Information Systems from Virginia Commonwealth University, School of Business**. My work centers on messy, fragmented, or decision-critical data: validating it, reconciling inconsistencies, identifying the drivers behind outcomes, and communicating the result through dashboards, analysis, and structured recommendations.
+
+Rather than treating projects as isolated technical exercises, I structure them as **business questions → analytical method → evidence → decision support**.
 
 ---
 
-## 🚀 Featured Analytics Projects
+## Analytical Operating Model
 
-### 📊 AI & Data Science Salary Intelligence Dashboard
+```mermaid
+flowchart LR
+    A[Business Question] --> B[Source Assessment]
+    B --> C[Data Cleaning & Validation]
+    C --> D[Analysis & Root-Cause Investigation]
+    D --> E[BI / Visualization]
+    E --> F[Findings & Recommendations]
+    F --> G[Decision Support]
+```
+
+---
+
+# Selected Case Studies
+
+## 01 — AI & Data Science Salary Intelligence
+### Power BI + Python | Compensation & Workforce Analytics
 
 <a href="https://github.com/gudhatin28/ai-job-market-powerbi-dashboard">
-  <img src="https://raw.githubusercontent.com/gudhatin28/ai-job-market-powerbi-dashboard/main/overview.png" width="760" alt="AI and Data Science Salary Dashboard" />
+<img src="https://raw.githubusercontent.com/gudhatin28/ai-job-market-powerbi-dashboard/main/overview.png" width="100%" alt="AI and Data Science Salary Intelligence Dashboard" />
 </a>
 
-**Business question:** How do compensation patterns differ across AI and Data Science roles, experience levels, company sizes, geography, and work arrangements?
+**Decision question**  
+How do compensation patterns differ by role, experience, company size, geography, year, and work arrangement?
 
-- Analyzed **3,755 real-world salary records** covering AI, Machine Learning, and Data Science roles.
-- Built a **3-page interactive Power BI dashboard** covering executive overview, salary analysis, and global trends.
-- Added a reproducible **Python validation workflow** and documented data assumptions and limitations.
-- Examined salary patterns by experience, job title, remote-work arrangement, company size, and year.
+**Analytical evidence**
+- Analyzed **3,755 real-world salary observations** spanning AI, ML, and Data Science roles.
+- Built a **3-page Power BI decision dashboard** covering executive overview, salary intelligence, and global/work-arrangement trends.
+- Added a reproducible **Python validation workflow** for row counts, duplicates, missing values, category coverage, and grouped salary summaries.
+- Applied sample-size awareness when comparing job-title compensation to avoid over-interpreting tiny groups.
 
-**Stack:** `Power BI` `Python` `Data Validation` `Business Intelligence` `Data Visualization`
+**Portfolio signal**  
+`Business Intelligence` `Power BI` `Python` `Data Validation` `Executive Reporting` `Data Storytelling`
 
-➡️ **[Explore the full case study](https://github.com/gudhatin28/ai-job-market-powerbi-dashboard)**
-
----
-
-### 🏗️ Utility & Asset Data Integration | Henrico County
-
-**Business problem:** Fragmented utility and infrastructure asset data created data-quality, reconciliation, and cross-system integration challenges.
-
-- Identified and documented **10 core data-quality and integration challenges**, including duplicate records, missing asset IDs, inconsistent schemas and coordinates, outdated GIS layers, and siloed systems.
-- Contributed to the **Unified Utility & Asset Data Integration Framework (UADIF)**, mapping identified problems to standardized schemas, unique asset identifiers, geospatial normalization, ETL-based integration, and governance controls.
-- Developed recommendations and a phased implementation roadmap designed to support a more reliable asset-data environment for infrastructure decision-making.
-
-**Focus:** `Data Quality` `Data Integration` `Data Governance` `Data Reconciliation` `GIS / Asset Data`
+**[Open full case study →](https://github.com/gudhatin28/ai-job-market-powerbi-dashboard)**
 
 ---
 
-### 🏦 Mortgage Delinquency Risk Analytics | Freddie Mac
+## 02 — Utility & Asset Data Integration | Henrico County
+### Data Quality + Integration + Governance
 
-**Business question:** How can loan-level characteristics be used to identify higher-risk mortgage purchases while preserving a high loan-purchase rate?
+**Decision problem**  
+Fragmented utility and infrastructure asset data created reconciliation, data-quality, and cross-system integration challenges.
 
+**Analytical evidence**
+- Identified and documented **10 core data-quality and integration problems**, including duplicate records, missing asset IDs, inconsistent schemas and coordinates, outdated GIS layers, and siloed systems.
+- Contributed to the **Unified Utility & Asset Data Integration Framework (UADIF)**.
+- Mapped identified problems to standardized schemas, unique asset identifiers, geospatial normalization, ETL-based integration, authoritative layers, and governance controls.
+- Developed recommendations and a phased implementation roadmap supporting a more reliable asset-data environment for infrastructure decision-making.
+
+**Portfolio signal**  
+`Data Quality` `Data Integration` `Data Governance` `Data Reconciliation` `Root-Cause Analysis` `GIS / Asset Data`
+
+---
+
+## 03 — Mortgage Delinquency Risk Analytics | Freddie Mac
+### SQL + Python | Risk Segmentation & Scenario Analysis
+
+**Decision question**  
+How can higher-risk mortgage purchases be identified while preserving a high loan-purchase rate?
+
+**Analytical evidence**
 - Analyzed approximately **22,500 mortgage loan records**.
-- Evaluated **4 machine-learning models** — Random Forest, Logistic Regression, Decision Tree, and SVM.
-- Investigated credit score, LTV, and DTI risk patterns and evaluated **0.5%, 1.0%, and 1.5% risk-threshold scenarios**.
-- The project estimated that excluding the highest-risk **1.5% of loans** could represent approximately **$2.06B in potential savings** while supporting a 98% loan-purchase objective.
+- Evaluated **4 machine-learning models**: Random Forest, Logistic Regression, Decision Tree, and SVM.
+- Investigated risk patterns involving **credit score, LTV, and DTI**.
+- Evaluated **0.5%, 1.0%, and 1.5% risk-threshold scenarios**.
+- The project estimated that excluding the highest-risk **1.5% of loans** could represent approximately **$2.06B in potential savings** while supporting a **98% loan-purchase objective**.
 
-**Stack:** `Python` `SQL` `Machine Learning` `Risk Analytics` `Data Analysis`
+**Portfolio signal**  
+`SQL` `Python` `Risk Analytics` `Scenario Analysis` `Machine Learning` `Decision Support`
 
 ---
 
-### 🏋️ Gym Management & Performance Tracking System
+## 04 — Gym Management & Performance Tracking System
+### Research Collaboration + SQL + Application Analytics
 
+**Project scope**
 - Collaborated with a **5-member research team over 6 months**.
-- Contributed to the **Workout History and Dashboard** components.
+- Contributed to **Workout History and Dashboard** components for tracking member activity.
 - Used SQL, Excel, and Python to support analysis, reporting, and research deliverables.
-- Maintained project documentation and version history throughout the project lifecycle.
+- Maintained project documentation and version history across the project lifecycle.
 
-**Stack:** `SQL` `Python` `Excel` `JavaScript` `Git/GitHub`
+**Portfolio signal**  
+`SQL` `Python` `Excel` `JavaScript` `Git/GitHub` `Research Documentation`
 
-➡️ **[View repository](https://github.com/gudhatin28/Gym-Management-and-Performance-Tracking-System)**
+**[Open repository →](https://github.com/gudhatin28/Gym-Management-and-Performance-Tracking-System)**
 
 ---
 
-## 🧰 Analytics Toolkit
+## Capability Matrix
+
+| Business Need | How I Work | Tools / Methods |
+|---|---|---|
+| **Understand what changed** | Trend, variance, segmentation, KPI analysis | SQL, Excel, Power BI, Python |
+| **Find why numbers do not match** | Reconciliation, validation, root-cause investigation | SQL, Python, data-quality checks |
+| **Turn analysis into reporting** | Interactive dashboards, executive summaries, visual storytelling | Power BI, Excel |
+| **Assess risk** | Threshold analysis, scenario comparison, model evaluation | Python, SQL, ML methods |
+| **Improve fragmented data environments** | Schema alignment, data-governance recommendations, integration frameworks | Data mapping, ETL concepts, governance |
+| **Communicate with stakeholders** | Findings, recommendations, documentation, presentations | Business communication, structured reporting |
+
+---
+
+## Technology Stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,mysql,js,github,git" alt="Technical skills" />
-
-<br/><br/>
-
+<img src="https://img.shields.io/badge/SQL-Querying%20%26%20Validation-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
 <img src="https://img.shields.io/badge/Power%20BI-Business%20Intelligence-F2C811?style=for-the-badge&logo=powerbi&logoColor=000" />
-<img src="https://img.shields.io/badge/Excel-Data%20Analysis-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" />
-<img src="https://img.shields.io/badge/SQL-Data%20Analysis-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/Python-Analytics%20%26%20Validation-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Excel-Analysis%20%26%20Reporting-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/Data%20Quality-Reconciliation-374151?style=flat-square" />
+<img src="https://img.shields.io/badge/BI-Dashboarding-374151?style=flat-square" />
+<img src="https://img.shields.io/badge/Risk-Scenario%20Analysis-374151?style=flat-square" />
+<img src="https://img.shields.io/badge/Governance-Data%20Controls-374151?style=flat-square" />
+<img src="https://img.shields.io/badge/GitHub-Version%20Control-181717?style=flat-square&logo=github" />
 
 </div>
 
-| Area | Skills |
-|---|---|
-| **Data Analysis** | SQL, Python, Excel, Data Cleaning, Data Validation, Exploratory Data Analysis |
-| **Business Intelligence** | Power BI, Dashboard Development, Reporting, Data Visualization |
-| **Data Management** | Data Quality, Data Reconciliation, Data Integration, Data Governance |
-| **Analytics** | Risk Analytics, Trend Analysis, KPI Analysis, Business Insights |
-| **Collaboration** | Git, GitHub, JavaScript, Project Documentation |
+---
+
+## Professional Direction
+
+I am targeting **BI Analyst and Data Analyst** roles where analytical work connects directly to business decisions — particularly environments involving reporting, data quality, operational analysis, risk, or cross-system data.
+
+My strongest value is not simply producing charts. It is **tracing the evidence behind a result, checking whether the result is trustworthy, and translating it into something a stakeholder can act on.**
 
 ---
 
-## 🎯 What I Bring to an Analytics Team
-
-I enjoy analyst work where the challenge is not simply creating a chart, but tracing **what is driving the result**, validating the evidence, and communicating the answer clearly.
-
-My portfolio spans **cross-system data-quality investigation, mortgage risk analysis, Power BI dashboarding, and research-system development**.
-
-I'm targeting **BI Analyst and Data Analyst** opportunities where I can apply SQL, Power BI, Python, Excel, reporting, and analytical problem-solving.
-
----
-
-## 🎓 Education
+## Education
 
 **Master of Science in Information Systems**  
 Virginia Commonwealth University — School of Business
@@ -125,12 +174,12 @@ Virginia Commonwealth University — School of Business
 
 <div align="center">
 
-### Let's Connect
+### Professional Links
 
-<a href="https://www.linkedin.com/in/gnandinireddy"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/gnandinireddy"><img src="https://img.shields.io/badge/LinkedIn-Nandini%20Reddy-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer" width="100%" />
+<sub>Portfolio built around evidence, reproducibility, and decision-ready analytics.</sub>
 
 </div>
