@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Nandini Reddy — BI Analyst and Data Analyst portfolio featuring Power BI, SQL, Python, Excel, data quality, and risk analytics projects." />
+  <meta name="description" content="Nandini Reddy — BI Analyst and Data Analyst portfolio featuring SQL, Power BI, Python, Excel, data quality, and decision-ready analytics." />
   <title>Nandini Reddy | BI & Data Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-page="home">
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Home">NR</a>
+    <a class="brand" href="index.html" aria-label="Home">NR</a>
     <nav class="nav" aria-label="Primary navigation">
+      <a class="active" href="index.html">Home</a>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
+      <a href="projects.html">Projects</a>
     </nav>
     <a class="nav-cta" href="https://www.linkedin.com/in/gnandinireddy" target="_blank" rel="noreferrer">LinkedIn</a>
   </header>
@@ -26,100 +26,48 @@
   <main>
     <section id="home" class="hero section-shell">
       <div class="hero-copy reveal">
-        <p class="eyebrow">BI Analyst · Data Analyst · Richmond, VA</p>
-        <h1>I turn messy data into <span>clear business decisions.</span></h1>
-        <p class="hero-lede">M.S. in Information Systems from Virginia Commonwealth University. I work across SQL, Power BI, Python, and Excel to validate data, investigate inconsistencies, and build decision-ready reporting.</p>
+        <p class="eyebrow">BI Analyst · Data Analyst · Richmond, Virginia</p>
+        <h1>Turning complex data into <span>clear, defensible decisions.</span></h1>
+        <p class="hero-lede">I’m Nandini Reddy, an M.S. Information Systems graduate from VCU. I use SQL, Power BI, Python, and Excel to validate data, trace inconsistencies, surface patterns, and build reporting that business teams can actually use.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View selected work</a>
-          <a class="btn btn-secondary" href="https://github.com/gudhatin28" target="_blank" rel="noreferrer">GitHub profile</a>
+          <a class="btn btn-primary" href="projects.html">Explore case studies</a>
+          <button class="btn btn-secondary open-assistant" type="button">Ask my portfolio assistant</button>
         </div>
       </div>
 
       <aside class="hero-panel reveal" aria-label="Portfolio highlights">
         <div class="hero-panel-top">
-          <p class="mini-label">Portfolio snapshot</p>
+          <p class="mini-label">Selected evidence</p>
           <span class="status-dot"><i></i> Open to BI & Data Analyst roles</span>
         </div>
         <div class="metric-grid">
-          <div class="metric-card"><strong>3,755</strong><span>salary records analyzed</span></div>
+          <div class="metric-card"><strong>3,755</strong><span>real-world salary records analyzed</span></div>
           <div class="metric-card"><strong>10</strong><span>cross-system data issues documented</span></div>
           <div class="metric-card"><strong>~22.5K</strong><span>mortgage records analyzed</span></div>
           <div class="metric-card"><strong>4</strong><span>risk models evaluated</span></div>
         </div>
-        <div class="stack-line">
-          <span>SQL</span><span>Power BI</span><span>Python</span><span>Excel</span>
-        </div>
+        <div class="stack-line"><span>SQL</span><span>Power BI</span><span>Python</span><span>Excel</span></div>
       </aside>
+    </section>
+
+    <section class="trust-strip section-shell reveal" aria-label="Portfolio strengths">
+      <div><strong>Business-first analysis</strong><span>Not charts for the sake of charts</span></div>
+      <div><strong>Defensible metrics</strong><span>Claims I can explain in an interview</span></div>
+      <div><strong>Clear communication</strong><span>Technical findings translated for stakeholders</span></div>
     </section>
 
     <section id="about" class="about section-shell section-block">
       <div class="section-heading reveal">
         <p class="eyebrow">About</p>
-        <h2>The part I chase is what the numbers are really saying.</h2>
+        <h2>I like the part of analytics where the numbers stop matching.</h2>
       </div>
       <div class="about-grid">
-        <p class="about-lead reveal">Data rarely lies, but it almost never tells the whole story on its own. I enjoy the work that starts when the numbers stop matching: cleaning the data, tracing the inconsistency, testing the explanation, and presenting the result in a way a stakeholder can actually use.</p>
+        <p class="about-lead reveal">Data rarely lies, but it almost never tells the whole story on its own. That gap between the number and the explanation is where I do my best work.</p>
         <div class="about-copy reveal">
-          <p>My project work spans cross-system data quality, mortgage delinquency risk, Power BI reporting, customer churn, and healthcare security/compliance. I care about being precise with data, documentation, and sensitive information.</p>
-          <p>I am targeting entry-level BI Analyst and Data Analyst opportunities where I can combine analytical discipline with strong business communication.</p>
+          <p>I work across SQL, Python, Excel, and Power BI to clean data, investigate inconsistencies, validate findings, and turn analysis into decision-ready reporting.</p>
+          <p>My work spans public-sector asset data, mortgage delinquency risk, Power BI workforce analytics, research-system development, and healthcare security/compliance. That mix taught me to be precise with both data and documentation.</p>
+          <a class="text-link" href="projects.html">See how that shows up in my projects →</a>
         </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects section-shell section-block">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Selected projects</p>
-        <h2>Work that shows how I analyze, not just what tools I know.</h2>
-      </div>
-
-      <article class="project project-featured reveal">
-        <div class="project-media">
-          <img src="https://raw.githubusercontent.com/gudhatin28/ai-job-market-powerbi-dashboard/main/overview.png" alt="AI and Data Science Salary Intelligence Power BI dashboard" loading="lazy" />
-        </div>
-        <div class="project-content">
-          <div class="project-kicker"><span>Power BI</span><span>Python</span><span>Business Intelligence</span></div>
-          <h3>AI & Data Science Salary Intelligence</h3>
-          <p>Analyzed <strong>3,755 real-world salary observations</strong> across AI, ML, and Data Science roles and built a 3-page Power BI dashboard covering compensation, experience, company size, geography, and work arrangements.</p>
-          <p>Added a reproducible Python validation workflow and documented limitations so role counts and salary comparisons are not overstated.</p>
-          <a class="text-link" href="https://github.com/gudhatin28/ai-job-market-powerbi-dashboard" target="_blank" rel="noreferrer">Explore the case study ↗</a>
-        </div>
-      </article>
-
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <div class="project-number">01</div>
-          <h3>Utility & Asset Data Integration</h3>
-          <p class="project-subtitle">Henrico County</p>
-          <p>Identified <strong>10 data-quality and integration issues</strong>, including duplicate records, missing asset IDs, inconsistent schemas/coordinates, outdated GIS layers, and siloed systems.</p>
-          <p>Contributed to the proposed UADIF framework and a phased roadmap for standardization, integration, GIS alignment, and governance.</p>
-          <div class="tag-row"><span>Data Quality</span><span>Integration</span><span>Governance</span></div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-number">02</div>
-          <h3>Mortgage Delinquency Risk Analytics</h3>
-          <p class="project-subtitle">Freddie Mac Loan-Level Data</p>
-          <p>Analyzed <strong>~22,500 mortgage loan records</strong>, evaluated Random Forest, Logistic Regression, Decision Tree, and SVM models, and investigated credit score, LTV, and DTI risk patterns.</p>
-          <p>Compared 0.5%, 1.0%, and 1.5% risk-threshold scenarios; the project estimated the highest-risk 1.5% could represent <strong>~$2.06B in potential savings</strong> while supporting a 98% purchase objective.</p>
-          <div class="tag-row"><span>SQL</span><span>Python</span><span>Risk Analytics</span></div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-number">03</div>
-          <h3>Gym Management & Performance Tracking</h3>
-          <p class="project-subtitle">Research collaboration</p>
-          <p>Worked with a <strong>5-member research team over 6 months</strong>, contributing Workout History and Dashboard components and supporting analysis, reporting, documentation, and version history.</p>
-          <div class="tag-row"><span>SQL</span><span>Python</span><span>Excel</span><span>GitHub</span></div>
-          <a class="text-link" href="https://github.com/gudhatin28/Gym-Management-and-Performance-Tracking-System" target="_blank" rel="noreferrer">View repository ↗</a>
-        </article>
-
-        <article class="project-card muted reveal">
-          <div class="project-number">04</div>
-          <h3>Customer Churn & Revenue Intelligence</h3>
-          <p class="project-subtitle">Telecom analytics</p>
-          <p>Used Python and data visualization to examine customer churn patterns, segment customers, and develop retention-oriented business insights.</p>
-          <div class="tag-row"><span>Python</span><span>Segmentation</span><span>Visualization</span></div>
-        </article>
       </div>
     </section>
 
@@ -137,7 +85,7 @@
             <ul>
               <li>Collaborated with a 5-member research team over 6 months to develop a Gym Management & Performance Tracking System.</li>
               <li>Analyzed and organized project data using SQL, Excel, and Python to support research analysis, reporting, and faculty-led deliverables.</li>
-              <li>Maintained project documentation and version history across the project lifecycle.</li>
+              <li>Contributed to Workout History and Dashboard components while maintaining documentation and version history.</li>
             </ul>
           </div>
         </article>
@@ -148,8 +96,8 @@
             <h3>Student Worker — Food & Catering Services</h3>
             <p class="timeline-org">Aramark · VCU</p>
             <ul>
-              <li>Recognized as <strong>Employee of the Year</strong> for sustained performance in a high-volume campus operation while completing a full-time M.S. program.</li>
-              <li>Supported day-to-day catering and event operations in a fast-paced university environment.</li>
+              <li>Recognized as <strong>Employee of the Year</strong> for sustained performance while completing a full-time M.S. program.</li>
+              <li>Supported high-volume campus catering and event operations in a fast-paced team environment.</li>
             </ul>
           </div>
         </article>
@@ -158,30 +106,39 @@
 
     <section id="skills" class="skills section-shell section-block">
       <div class="section-heading centered reveal">
-        <p class="eyebrow">What I work with</p>
-        <h2>A focused analyst toolkit.</h2>
+        <p class="eyebrow">Core toolkit</p>
+        <h2>Built around the analyst workflow.</h2>
       </div>
       <div class="skill-grid">
-        <div class="skill-card reveal"><span class="skill-icon">SQL</span><h3>Query & validate</h3><p>Filtering, joins, aggregation, reconciliation, and validation.</p></div>
+        <div class="skill-card reveal"><span class="skill-icon">SQL</span><h3>Query & validate</h3><p>Joins, aggregation, filtering, reconciliation, and data-quality checks.</p></div>
         <div class="skill-card reveal"><span class="skill-icon">BI</span><h3>Report & visualize</h3><p>Power BI dashboards, KPIs, trend analysis, and stakeholder reporting.</p></div>
-        <div class="skill-card reveal"><span class="skill-icon">Py</span><h3>Analyze & test</h3><p>Python/pandas for exploratory analysis, validation, segmentation, and modeling.</p></div>
+        <div class="skill-card reveal"><span class="skill-icon">Py</span><h3>Analyze & test</h3><p>Python/pandas for EDA, validation, segmentation, and model evaluation.</p></div>
         <div class="skill-card reveal"><span class="skill-icon">XL</span><h3>Work with business data</h3><p>Excel analysis, reporting, cleaning, and structured review.</p></div>
       </div>
-      <div class="skill-cloud reveal" aria-label="Additional skills">
+      <div class="skill-cloud reveal">
         <span>Data Cleaning</span><span>Data Validation</span><span>Data Reconciliation</span><span>Data Governance</span><span>Risk Analytics</span><span>Root-Cause Analysis</span><span>Dashboard Development</span><span>Business Intelligence</span><span>Data Visualization</span><span>Stakeholder Communication</span>
       </div>
     </section>
 
-    <section id="education" class="education section-shell section-block">
+    <section class="home-project-preview section-shell section-block">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Four projects. Four different analyst signals.</h2>
+      </div>
+      <div class="preview-grid">
+        <a class="preview-card reveal" href="projects.html#salary"><span>Power BI + Python</span><h3>AI & Data Science Salary Intelligence</h3><p>3,755 real-world salary observations and a 3-page BI dashboard.</p></a>
+        <a class="preview-card reveal" href="projects.html#henrico"><span>Data Quality + Governance</span><h3>Henrico County Asset Data</h3><p>10 documented data-quality and integration challenges.</p></a>
+        <a class="preview-card reveal" href="projects.html#mortgage"><span>SQL + Python + Risk</span><h3>Mortgage Delinquency Analytics</h3><p>~22.5K loan records, 4 models, scenario-based risk analysis.</p></a>
+        <a class="preview-card reveal" href="projects.html#gym"><span>Research + Systems</span><h3>Gym Management Platform</h3><p>5-person research team, 6-month delivery cycle.</p></a>
+      </div>
+      <div class="center-action reveal"><a class="btn btn-primary" href="projects.html">View detailed case studies</a></div>
+    </section>
+
+    <section class="education section-shell section-block">
       <div class="education-card reveal">
-        <div>
-          <p class="eyebrow">Education</p>
-          <h2>Master of Science in Information Systems</h2>
-          <p>Virginia Commonwealth University · School of Business · 2024–2026</p>
-        </div>
+        <div><p class="eyebrow">Education</p><h2>Master of Science in Information Systems</h2><p>Virginia Commonwealth University · School of Business · 2024–2026</p></div>
         <div class="education-mark">VCU</div>
       </div>
-
       <div class="cert-grid reveal">
         <div><strong>Data Visualization</strong><span>Kaggle · 2026</span></div>
         <div><strong>Introduction to SQL</strong><span>Kaggle · 2026</span></div>
@@ -192,24 +149,31 @@
 
     <section class="contact section-shell section-block">
       <div class="contact-card reveal">
-        <p class="eyebrow">Let's connect</p>
+        <p class="eyebrow">Let’s connect</p>
         <h2>Hiring for a BI Analyst or Data Analyst role?</h2>
-        <p>I’m interested in opportunities where reporting, data quality, operational analysis, risk, or cross-system data are part of the work.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/gnandinireddy" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn btn-secondary" href="https://github.com/gudhatin28" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
+        <p>I’m interested in roles involving reporting, data quality, operational analysis, risk, or cross-system data.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="https://www.linkedin.com/in/gnandinireddy" target="_blank" rel="noreferrer">LinkedIn</a><button class="btn btn-secondary open-assistant" type="button">Ask the assistant</button></div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="section-shell footer-inner">
-      <span>Nandini Reddy</span>
-      <span>BI Analyst · Data Analyst</span>
-      <span id="year"></span>
-    </div>
-  </footer>
+  <footer><div class="section-shell footer-inner"><span>Nandini Reddy</span><span>BI Analyst · Data Analyst</span><span id="year"></span></div></footer>
+
+  <button class="assistant-launcher open-assistant" type="button" aria-label="Open portfolio assistant"><span class="assistant-pulse"></span>Ask Nandini AI</button>
+  <div class="assistant-shell" id="assistantShell" aria-hidden="true">
+    <div class="assistant-backdrop" data-close-assistant></div>
+    <section class="assistant-panel" role="dialog" aria-modal="true" aria-labelledby="assistantTitle">
+      <div class="assistant-head"><div><p class="mini-label">Portfolio assistant</p><h2 id="assistantTitle">Ask about Nandini</h2></div><button class="assistant-close" type="button" data-close-assistant aria-label="Close assistant">×</button></div>
+      <div class="assistant-note">This assistant uses curated facts from this portfolio. It does not invent experience or credentials.</div>
+      <div class="assistant-messages" id="assistantMessages" aria-live="polite">
+        <div class="bot-message">Hi — I can answer questions about Nandini’s skills, projects, education, experience, and target roles.</div>
+      </div>
+      <div class="assistant-suggestions">
+        <button type="button">What are her strongest projects?</button><button type="button">What tools does she use?</button><button type="button">Tell me about her experience</button><button type="button">Why BI/Data Analyst?</button>
+      </div>
+      <form class="assistant-form" id="assistantForm"><input id="assistantInput" autocomplete="off" placeholder="Ask about skills, projects, experience…" /><button type="submit">Send</button></form>
+    </section>
+  </div>
 
   <script src="script.js"></script>
 </body>
