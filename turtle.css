@@ -82,6 +82,134 @@
   font-weight:600;
 }
 
+/* Compact premium header */
+.site-header{
+  min-height:58px !important;
+  padding:10px max(18px,calc((100vw - 1180px)/2)) !important;
+  gap:20px !important;
+  background:rgba(7,17,31,.72) !important;
+  backdrop-filter:blur(16px) saturate(125%) !important;
+  box-shadow:0 8px 28px rgba(0,0,0,.12) !important;
+}
+
+.brand{
+  width:36px !important;
+  height:36px !important;
+  border-radius:11px !important;
+  font-size:.82rem !important;
+}
+
+.nav{
+  gap:22px !important;
+  font-size:.88rem !important;
+}
+
+.nav a.active:after{
+  bottom:-7px !important;
+}
+
+.nav-cta{
+  padding:7px 13px !important;
+  font-size:.84rem !important;
+}
+
+/* Soft white illuminated boards */
+.hero-panel,
+.metric-card,
+.skill-card,
+.education-card,
+.cert-grid div,
+.case-points div,
+.case-visual,
+.abstract-visual,
+.risk-visual,
+.research-visual,
+.research-card,
+.timeline-item,
+.about-page-grid,
+.preview-card{
+  position:relative;
+  isolation:isolate;
+}
+
+.hero-panel,
+.skill-card,
+.education-card,
+.cert-grid div,
+.case-points div,
+.case-visual,
+.abstract-visual,
+.risk-visual,
+.research-visual,
+.research-card,
+.preview-card{
+  border-color:rgba(255,255,255,.16) !important;
+  box-shadow:
+    0 18px 48px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 0 24px rgba(255,255,255,.025) !important;
+  overflow:hidden;
+}
+
+.metric-card{
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,255,255,.035)) !important;
+  border-color:rgba(255,255,255,.14) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.09),0 12px 30px rgba(0,0,0,.12) !important;
+  overflow:hidden;
+}
+
+.hero-panel:after,
+.metric-card:after,
+.skill-card:after,
+.education-card:after,
+.cert-grid div:after,
+.case-points div:after,
+.case-visual:after,
+.abstract-visual:after,
+.risk-visual:after,
+.research-visual:after,
+.research-card:after,
+.preview-card:after{
+  content:"";
+  position:absolute;
+  top:-80%;
+  left:-55%;
+  width:42%;
+  height:260%;
+  z-index:-1;
+  pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),rgba(255,255,255,.035),transparent);
+  transform:rotate(18deg);
+  animation:whiteBoardSweep 8.5s ease-in-out infinite;
+}
+
+.hero-panel:after{animation-delay:.2s}
+.metric-card:nth-child(2):after,.skill-card:nth-child(2):after,.cert-grid div:nth-child(2):after{animation-delay:1.2s}
+.metric-card:nth-child(3):after,.skill-card:nth-child(3):after,.cert-grid div:nth-child(3):after{animation-delay:2.1s}
+.metric-card:nth-child(4):after,.skill-card:nth-child(4):after,.cert-grid div:nth-child(4):after{animation-delay:3s}
+
+.metric-card:hover,
+.skill-card:hover,
+.cert-grid div:hover,
+.case-points div:hover,
+.preview-card:hover{
+  border-color:rgba(255,255,255,.30) !important;
+  box-shadow:
+    0 16px 42px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.14),
+    0 0 28px rgba(255,255,255,.06) !important;
+  transform:translateY(-2px);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+
+@keyframes whiteBoardSweep{
+  0%,20%{left:-65%;opacity:0}
+  32%{opacity:.45}
+  48%{left:125%;opacity:.12}
+  55%,100%{left:125%;opacity:0}
+}
+
 @keyframes turtleFloat{
   0%,100%{transform:translateY(0) rotate(0deg)}
   50%{transform:translateY(-8px) rotate(1deg)}
@@ -98,6 +226,9 @@
 }
 
 @media (max-width:620px){
+  .site-header{min-height:52px !important;padding:8px 12px !important}
+  .brand{width:34px !important;height:34px !important}
+  .nav-cta{padding:6px 10px !important;font-size:.78rem !important}
   .turtle-assistant{
     width:82px;
     height:72px;
@@ -110,5 +241,17 @@
 @media (prefers-reduced-motion:reduce){
   .turtle-assistant,
   .turtle-assistant:after,
-  .turtle-sparkle{animation:none}
+  .turtle-sparkle,
+  .hero-panel:after,
+  .metric-card:after,
+  .skill-card:after,
+  .education-card:after,
+  .cert-grid div:after,
+  .case-points div:after,
+  .case-visual:after,
+  .abstract-visual:after,
+  .risk-visual:after,
+  .research-visual:after,
+  .research-card:after,
+  .preview-card:after{animation:none}
 }
